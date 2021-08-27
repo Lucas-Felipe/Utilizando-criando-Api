@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uGEa9BFY+7r1a6OSoVAxJdFgfe51gqEqNf8Su0M8p5IuGD+xDdO0Oq5Cxcqz9iw+KkyZvmEl8bCHqvoo4dgqZA==",
+  "dgSpecHash": "2DuvjyTDHqbNLBDQls5aW54yR/Za6Rp70f0Zurxcnr038NhOsRZC2WOjuwbK81njPTOA66/1lgABbmZVYo06Ag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucas.felipe\\Downloads\\FilmesAPI\\FilmesAPI.csproj",
+  "projectFilePath": "C:\\Users\\lucas.felipe\\Downloads\\Utilizando-criando-Api\\FilmesAPI\\FilmesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas.felipe\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\lucas.felipe\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
