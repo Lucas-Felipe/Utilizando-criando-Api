@@ -9,7 +9,7 @@ namespace FilmesAPI.Models
     public class Filme
     {
         
-
+       
         [Required(ErrorMessage ="campo de título obrigatório")]
         public string titulo { get; set; }
         [StringLength(30,ErrorMessage ="no máximo 30 caracteres")]

@@ -23,6 +23,7 @@ namespace FilmesAPI.Properties
         public IActionResult adicionaFilme([FromBody]Filme filme) 
         {
             _context.Filmes.Add(filme);
+            _context.SaveChanges();
             return CreatedAtAction(nameof(RecuperaFilmePorId),new {Id=filme.Id },filme);
         }
 
@@ -43,5 +44,31 @@ namespace FilmesAPI.Properties
             return NotFound();
         }
 
+        [HttpPut("{id}")]
+        public IActionResult AtualizaFilme(int id,[FromBody] Filme filmeNovo)
+        {
+            Filme filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
+            if (filme==null)
+            {
+                return NotFound();
+            }
+
+            filme = filmeNovo;
+            _context.SaveChanges();
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteFilme(int id)
+        {
+            Filme filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
+            if (filme==null)
+            {
+                return NotFound();
+            }
+            _context.Remove(filme);
+            _context.SaveChanges();
+            return NoContent();
+        }
     }
 }

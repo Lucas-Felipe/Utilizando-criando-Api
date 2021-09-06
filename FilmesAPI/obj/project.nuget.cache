@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2DuvjyTDHqbNLBDQls5aW54yR/Za6Rp70f0Zurxcnr038NhOsRZC2WOjuwbK81njPTOA66/1lgABbmZVYo06Ag==",
+  "dgSpecHash": "xP9L5DoXZCYmj5X2e8B0ROg+RyqEyHnUErtf9ezbGmuxIvWkpDvdQT1SgWzOvZE3G/Ni/15GlIgHz1n9arPagg==",
   "success": true,
   "projectFilePath": "C:\\Users\\lucas.felipe\\Downloads\\Utilizando-criando-Api\\FilmesAPI\\FilmesAPI.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,8 @@
     "C:\\Users\\lucas.felipe\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\lucas.felipe\\.nuget\\packages\\mysql.data\\8.0.26\\mysql.data.8.0.26.nupkg.sha512",
     "C:\\Users\\lucas.felipe\\.nuget\\packages\\mysql.entityframeworkcore\\5.0.5\\mysql.entityframeworkcore.5.0.5.nupkg.sha512",
+    "C:\\Users\\lucas.felipe\\.nuget\\packages\\mysqlconnector\\1.3.10\\mysqlconnector.1.3.10.nupkg.sha512",
+    "C:\\Users\\lucas.felipe\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.1\\pomelo.entityframeworkcore.mysql.5.0.1.nupkg.sha512",
     "C:\\Users\\lucas.felipe\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\lucas.felipe\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\lucas.felipe\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
