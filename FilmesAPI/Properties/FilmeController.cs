@@ -1,4 +1,6 @@
-﻿using FilmesAPI.Data;
+﻿using AutoMapper;
+using FilmesAPI.Data;
+using FilmesAPI.Data.Dtos;
 using FilmesAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -13,15 +15,19 @@ namespace FilmesAPI.Properties
     public class FilmeController:ControllerBase
     {
         private FilmeContext _context;
+        private IMapper _mapper;
 
-        public FilmeController(FilmeContext context)
+        public FilmeController(FilmeContext context,IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         [HttpPost]
-        public IActionResult adicionaFilme([FromBody]Filme filme) 
+        public IActionResult adicionaFilme([FromBody]CreateFilmeDto filmeDto) 
         {
+            Filme filme = _mapper.Map<Filme>(filmeDto);
+
             _context.Filmes.Add(filme);
             _context.SaveChanges();
             return CreatedAtAction(nameof(RecuperaFilmePorId),new {Id=filme.Id },filme);
@@ -45,7 +51,7 @@ namespace FilmesAPI.Properties
         }
 
         [HttpPut("{id}")]
-        public IActionResult AtualizaFilme(int id,[FromBody] Filme filmeNovo)
+        public IActionResult AtualizaFilme(int id,[FromBody] UpdateFilmeDto filmeDto)
         {
             Filme filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
             if (filme==null)
@@ -53,7 +59,7 @@ namespace FilmesAPI.Properties
                 return NotFound();
             }
 
-            filme = filmeNovo;
+            _mapper.Map(filmeDto, filme);
             _context.SaveChanges();
             return NoContent();
         }

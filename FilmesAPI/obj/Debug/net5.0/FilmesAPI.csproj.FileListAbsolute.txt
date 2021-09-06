@@ -96,3 +96,5 @@ C:\Users\lucas.felipe\Downloads\Utilizando-criando-Api\FilmesAPI\obj\Debug\net5.
 C:\Users\lucas.felipe\Downloads\Utilizando-criando-Api\FilmesAPI\obj\Debug\net5.0\FilmesAPI.genruntimeconfig.cache
 C:\Users\lucas.felipe\Downloads\Utilizando-criando-Api\FilmesAPI\bin\Debug\net5.0\MySqlConnector.dll
 C:\Users\lucas.felipe\Downloads\Utilizando-criando-Api\FilmesAPI\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\lucas.felipe\Downloads\Utilizando-criando-Api\FilmesAPI\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\lucas.felipe\Downloads\Utilizando-criando-Api\FilmesAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
