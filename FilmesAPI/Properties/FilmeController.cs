@@ -45,7 +45,8 @@ namespace FilmesAPI.Properties
             Filme filme=_context.Filmes.FirstOrDefault(filme => filme.Id == id);
             if (filme!=null)
             {
-                return Ok(filme);
+                ReadFilmeDto filmeDto = _mapper.Map<ReadFilmeDto>(filme);
+                return Ok(filmeDto);
             }
             return NotFound();
         }
